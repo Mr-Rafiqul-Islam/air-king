@@ -2,7 +2,18 @@
   "use strict";
 
  
+  // fixed menu js
+  $(window).on('scroll', function () {
+    let scroll = $(window).scrollTop();
+    if (scroll < 120) {
+      $("#sticky-header").removeClass("sticky-menu");
+      $("#header-fixed-height").removeClass("active-height");
 
+    } else {
+      $("#sticky-header").addClass("sticky-menu");
+      $("#header-fixed-height").addClass("active-height");
+    }
+  });
 
   // Magnific popup image js
   $('.image-popup').magnificPopup({

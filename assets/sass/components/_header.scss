@@ -112,6 +112,44 @@
     }
   }
 }
+
+#header-fixed-height.active-height {
+  display: block;
+  height: 94px;
+}
+
+.sticky-menu {
+  background-color: var(--bg-one);
+  animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .navbar-main {
+    background-color:  var(--bg-one) !important;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .call-to-action {
+    .icon {
+      background-color: var(--bg-one) !important;
+
+      &:hover {
+        background-color: var(--primary);
+        color: white;
+      }
+    }
+
+    &:hover {
+      .icon {
+        background-color: var(--primary) !important;
+      }
+    }
+  }
+}
+
 /* Mobile menu start */
 .mobile-menu-area {
   z-index: 999;

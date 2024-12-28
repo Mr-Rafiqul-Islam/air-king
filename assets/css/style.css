@@ -354,6 +354,37 @@ p {
   background: var(--primary);
 }
 
+#header-fixed-height.active-height {
+  display: block;
+  height: 94px;
+}
+
+.sticky-menu {
+  background-color: var(--bg-one);
+  -webkit-animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+          animation: 400ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sticky-menu .navbar-main {
+  background-color: var(--bg-one) !important;
+  border-radius: 0;
+  padding: 0;
+}
+.sticky-menu .call-to-action .icon {
+  background-color: var(--bg-one) !important;
+}
+.sticky-menu .call-to-action .icon:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.sticky-menu .call-to-action:hover .icon {
+  background-color: var(--primary) !important;
+}
+
 /* Mobile menu start */
 .mobile-menu-area {
   z-index: 999;
