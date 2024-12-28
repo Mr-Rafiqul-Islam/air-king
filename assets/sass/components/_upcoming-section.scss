@@ -1,0 +1,27 @@
+/*=============================
+	06. Upcoming-Section CSS start
+===============================*/
+.upcoming-section {
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--font-roboto);
+    color: var(--tertiary);
+    @media (max-width: 575.98px) {
+      font-size: 0.9rem;
+    }
+  }
+  .value-card {
+    transition: var(--transition);
+    height: 118.45px;
+    div {
+      color: var(--tertiary);
+      img {
+        max-width: 50px;
+      }
+    }
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}

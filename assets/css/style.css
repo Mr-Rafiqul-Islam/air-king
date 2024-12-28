@@ -13,6 +13,7 @@
 03. Header CSS
 04. Banner CSS
 05. About CSS
+06. Upcoming-Section CSS
 
 *** Template Pages ***
 =========================
@@ -595,4 +596,34 @@ p {
 }
 .about-section .about-content .learn-more {
   color: var(--primary);
+}
+
+/*=============================
+	06. Upcoming-Section CSS start
+===============================*/
+.upcoming-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  color: var(--tertiary);
+}
+@media (max-width: 575.98px) {
+  .upcoming-section h4 {
+    font-size: 0.9rem;
+  }
+}
+.upcoming-section .value-card {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  height: 118.45px;
+}
+.upcoming-section .value-card div {
+  color: var(--tertiary);
+}
+.upcoming-section .value-card div img {
+  max-width: 50px;
+}
+.upcoming-section .value-card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
