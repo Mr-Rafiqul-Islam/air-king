@@ -12,7 +12,7 @@
 02. Common CSS
 03. Header CSS
 04. Banner CSS
-05. Feature CSS
+05. About CSS
 
 *** Template Pages ***
 =========================
@@ -129,6 +129,11 @@ p {
 .py-120 {
   padding: 120px 0;
 }
+@media (max-width: 991.98px) {
+  .py-120 {
+    padding: 60px 0;
+  }
+}
 
 .pt-120 {
   padding-top: 120px;
@@ -181,6 +186,55 @@ p {
 .theme-btn-border {
   background: transparent;
   border: 1px solid var(--border-color);
+}
+
+.section-title .sub-title {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--primary) !important;
+  position: relative;
+  padding-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.section-title .sub-title::before, .section-title .sub-title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.section-title .sub-title::before {
+  left: 100%;
+  width: 30px;
+  height: 2px;
+  background-color: var(--tertiary);
+}
+.section-title .sub-title::after {
+  left: calc(100% + 30px);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--tertiary);
+}
+.section-title .title {
+  font-size: 60px;
+  line-height: 68px;
+  letter-spacing: -1.48px;
+}
+@media (max-width: 1199.98px) {
+  .section-title .title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-title .title {
+    font-size: 36px;
+    line-height: 50px;
+  }
 }
 
 /*=============================
@@ -490,25 +544,24 @@ p {
   }
 }
 
-.arrow {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
 /*=============================
-	05. Feature CSS start
+	05. About CSS start
 ===============================*/
-.feature-section .feature-content .sub-title {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--tertiary) !important;
+.about-section .about-img {
+  vertical-align: middle;
 }
-.feature-section .feature-content .feature-title {
-  font-size: 60px;
-  line-height: 68px;
-  letter-spacing: -1.48px;
+@media (max-width: 1199.98px) {
+  .about-section .about-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 991.98px) {
+  .about-section .about-content p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+.about-section .about-content .learn-more {
+  color: var(--primary);
 }

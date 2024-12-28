@@ -13,7 +13,7 @@
 02. Common CSS
 03. Header CSS
 04. Banner CSS
-05. Feature CSS
+05. About CSS
 
 *** Template Pages ***
 =========================
@@ -122,6 +122,9 @@ p {
 // custom padding class
 .py-120{
   padding: 120px 0;
+  @media (max-width:991.98px) {
+    padding: 60px 0;
+  }
 }
 .pt-120{
   padding-top: 120px;
