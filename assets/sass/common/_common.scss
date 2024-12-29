@@ -15,6 +15,7 @@
 04. Banner CSS
 05. About CSS
 06. Upcoming-Section CSS
+07. Product CSS
 
 *** Template Pages ***
 =========================
@@ -28,7 +29,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
 
 /*=============================
-	01. Variable CSS start
+	01. Variable CSS Start
 ===============================*/
 
 :root {
@@ -52,7 +53,7 @@
     rgba(14, 43, 197, 0) 0%,
     #0e2bc5 100%
   );
-  --shadow: 0px 10px 30px 0px rgba(137, 139, 142, 0.2);
+  --shadow: 0px 1px 8px 0px rgba(0,0,0,0.52);
 }
 
 /*=============================
